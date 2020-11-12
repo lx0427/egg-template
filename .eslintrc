@@ -10,7 +10,8 @@
     "one-var-declaration-per-line": "off",
     "no-unused-vars": "off",
     "indent": "off",
-    "no-irregular-whitespace": ["error", { "skipComments": true }]
+    "no-irregular-whitespace": ["error", { "skipComments": true }],
+    "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 5 }]
   },
   "parserOptions": {
     "sourceType": "module"
