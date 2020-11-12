@@ -16,7 +16,7 @@ module.exports = (appInfo) => {
   config.keys = appInfo.name + '_1605148712078_1819'
 
   // add your middleware config here
-  config.middleware = []
+  config.middleware = ['robot']
 
   // add your user config here
   const userConfig = {
@@ -29,6 +29,10 @@ module.exports = (appInfo) => {
     mapping: {
       '.nj': 'nunjucks',
     },
+  }
+
+  exports.robot = {
+    ua: [/Baiduspider/i],
   }
 
   return {
