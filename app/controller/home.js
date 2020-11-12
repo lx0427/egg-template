@@ -5,7 +5,7 @@ const Controller = require('egg').Controller
 class HomeController extends Controller {
   async index() {
     const { ctx } = this
-    await ctx.render('test.nj', { name: 'view test' })
+    await ctx.render('test.nj', { name: 'view test', time: 1605139200 })
   }
   async getJson() {
     const { ctx } = this
