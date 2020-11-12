@@ -1,3 +1,18 @@
 {
-  "extends": "eslint-config-egg"
+  "extends": "eslint-config-egg",
+  "rules": {
+    "arrow-parens": "off",
+    "strict": "off",
+    "semi": "off",
+    "no-empty-function": "off",
+    "array-bracket-spacing": "off",
+    "space-before-function-paren": "off",
+    "one-var-declaration-per-line": "off",
+    "no-unused-vars": "off",
+    "indent": "off",
+    "no-irregular-whitespace": ["error", { "skipComments": true }]
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  }
 }
