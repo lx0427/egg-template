@@ -24,6 +24,7 @@ module.exports = (appInfo) => {
   }
 
   exports.view = {
+    serverUrl: 'http://localhost:7001',
     defaultViewEngine: 'nunjucks',
     mapping: {
       '.nj': 'nunjucks',
