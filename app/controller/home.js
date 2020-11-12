@@ -12,6 +12,9 @@ class HomeController extends Controller {
     const res = await ctx.curl(this.config.view.serverUrl + '/public/json/01.json', { dataType: 'json' })
     ctx.body = res.data
   }
+  async isIos() {
+    this.ctx.body = `isIOS: ${this.ctx.isIOS}`
+  }
 }
 
 module.exports = HomeController
