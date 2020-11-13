@@ -5,20 +5,12 @@ class UserController extends Controller {
     this.ctx.body = 'index'
   }
 
-  async new() {
-    this.ctx.body = 'new'
-  }
-
-  async create() {
-    this.ctx.body = 'create'
-  }
-
   async show() {
     this.ctx.body = 'show'
   }
 
-  async edit() {
-    this.ctx.body = 'edit'
+  async create() {
+    this.ctx.body = 'create'
   }
 
   async update() {
@@ -27,6 +19,14 @@ class UserController extends Controller {
 
   async destroy() {
     this.ctx.body = 'destroy'
+  }
+
+  async new() {
+    this.ctx.body = 'new'
+  }
+
+  async edit() {
+    this.ctx.body = 'edit'
   }
 }
 

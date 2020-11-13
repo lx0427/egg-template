@@ -24,6 +24,10 @@ class HomeController extends Controller {
     this.app.logger.error('app logger')
     this.ctx.body = 'test logger'
   }
+  async detail() {
+    const { ctx } = this
+    ctx.body = JSON.stringify(ctx.params)
+  }
 }
 
 module.exports = HomeController
