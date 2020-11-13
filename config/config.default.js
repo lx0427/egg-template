@@ -35,6 +35,10 @@ module.exports = (appInfo) => {
     ua: [/Baiduspider/i],
   }
 
+  exports.security = {
+    csrf: false,
+  }
+
   return {
     ...config,
     ...userConfig,
