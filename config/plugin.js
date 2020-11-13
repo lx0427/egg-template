@@ -15,3 +15,8 @@ exports.ua = {
   enable: true,
   path: path.join(__dirname, '../egg-ua'),
 }
+
+exports.validate = {
+  enable: true,
+  package: 'egg-validate',
+}
