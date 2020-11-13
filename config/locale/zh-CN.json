@@ -1,0 +1,9 @@
+{
+  "should be an email": "必须为邮箱",
+  "should be an integer": "必须为整数类型",
+  "invalid": "invalid",
+  "required": "必须，不能为空",
+  "missing_field": "字段丢失",
+  "should equal to %s": "必须和 %s 相同",
+  "should not be empty": "不能为空"
+}

@@ -2,6 +2,14 @@
 
 'use strict'
 
+const I18n = require('i18n')
+// 配置i18n
+I18n.configure({
+  locales: ['zh-CN'],
+  defaultLocale: 'zh-CN',
+  directory: __dirname + '/locale',
+})
+
 /**
  * @param {Egg.EggAppInfo} appInfo app info
  */
@@ -37,6 +45,13 @@ module.exports = (appInfo) => {
 
   exports.security = {
     csrf: false,
+  }
+
+  config.validate = {
+    translate() {
+      const args = Array.prototype.slice.call(arguments)
+      return I18n.__.apply(I18n, args)
+    },
   }
 
   return {
