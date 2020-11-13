@@ -1,6 +1,6 @@
 'use strict'
 
-const Controller = require('egg').Controller
+const { Controller } = require('egg')
 
 class HomeController extends Controller {
   async index() {
@@ -14,6 +14,15 @@ class HomeController extends Controller {
   }
   async isIos() {
     this.ctx.body = `isIOS: ${this.ctx.isIOS}`
+  }
+  async testLogger() {
+    this.logger.info('this logger')
+    this.logger.error('this logger')
+    this.ctx.logger.info('ctx logger')
+    this.ctx.logger.error('ctx logger')
+    this.app.logger.info('app logger')
+    this.app.logger.error('app logger')
+    this.ctx.body = 'test logger'
   }
 }
 

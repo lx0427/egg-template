@@ -8,4 +8,5 @@ module.exports = (app) => {
   router.get('/', controller.home.index)
   router.get('/get-json', controller.home.getJson)
   router.get('/is-ios', controller.home.isIos)
+  router.get('/test-logger', controller.home.testLogger)
 }
